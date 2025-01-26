@@ -10,8 +10,14 @@
   "author": "Vikram Kumar",
   "license": "MIT",
   "dependencies": {
+    "@google-cloud/firestore": "^7.11.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "firebase": "^11.2.0",
+    "firebase-admin": "^13.0.2",
+    "geofire-common": "^6.0.0",
+    "lodash": "^4.17.21",
     "nodemon": "^3.1.9"
   }
 }
