@@ -1,0 +1,443 @@
+[
+  {
+    "carId": "car001",
+    "hostId": "host001",
+    "allStarHost": true,
+    "rating": 4.8,
+    "pricePerDay": 100,
+    "discount": 15,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/BMW_G42_1X7A5766.jpg/640px-BMW_G42_1X7A5766.jpg",
+    "make": "BMW",
+    "model": "2 Series",
+    "year": 2022,
+    "location": {
+      "latitude": 43.6401,
+      "longitude": -79.3805
+    },
+    "unavailability": ["2025-02-01", "2025-02-02", "2025-02-03"],
+    "features": ["GPS", "Bluetooth", "Heated Seats"],
+    "totalTrips": 100,
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-01-15T08:00:00Z"
+  },
+  {
+    "carId": "car002",
+    "hostId": "host002",
+    "allStarHost": true,
+    "rating": 4.7,
+    "pricePerDay": 80,
+    "discount": 10,
+    "carImageUrl": "https://hips.hearstapps.com/hmg-prod/images/2022-camry-xse-blueprint-009-1637603214.jpg?crop=1.00xw:0.931xh;0,0.0186xh&resize=2048:*",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "location": {
+      "latitude": 43.6522,
+      "longitude": -79.379
+    },
+    "unavailability": ["2025-02-01", "2025-02-05", "2025-02-07"],
+    "features": ["Bluetooth", "Navigation", "Leather Seats"],
+    "totalTrips": 85,
+    "createdAt": "2025-01-16T09:00:00Z",
+    "updatedAt": "2025-01-16T09:00:00Z"
+  },
+  {
+    "carId": "car003",
+    "hostId": "host003",
+    "allStarHost": false,
+    "rating": 4.5,
+    "pricePerDay": 50,
+    "discount": 5,
+    "carImageUrl": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Mercedes-Benz/S-Class/10853/1690451611932/front-left-side-47.jpg",
+    "make": "Mercedes",
+    "model": "S-Class",
+    "year": 2022,
+    "location": {
+      "latitude": 43.6505,
+      "longitude": -79.3758
+    },
+    "unavailability": ["2025-01-22", "2025-01-23"],
+    "features": ["Bluetooth", "Adaptive Cruise Control", "Sunroof"],
+    "totalTrips": 150,
+    "createdAt": "2025-01-17T10:00:00Z",
+    "updatedAt": "2025-01-17T10:00:00Z"
+  },
+  {
+    "carId": "car004",
+    "hostId": "host004",
+    "allStarHost": false,
+    "rating": 4.2,
+    "pricePerDay": 60,
+    "discount": 20,
+    "carImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHI5RreZggXEfDk33aBZVGq13PByWBtg5_4g&s",
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 2022,
+    "location": {
+      "latitude": 43.635,
+      "longitude": -79.371
+    },
+    "unavailability": ["2025-01-22", "2025-01-23"],
+    "features": ["GPS", "Bluetooth", "Manual Transmission"],
+    "totalTrips": 200,
+    "createdAt": "2025-01-18T11:00:00Z",
+    "updatedAt": "2025-01-18T11:00:00Z"
+  },
+  {
+    "carId": "car005",
+    "hostId": "host005",
+    "allStarHost": true,
+    "rating": 4.7,
+    "pricePerDay": 70,
+    "discount": 15,
+    "carImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsI1QBQW7-OPVfeh_-0m9rYC_TNeTYQ_kuxg&s",
+    "make": "Audi",
+    "model": "Q7",
+    "year": 2022,
+    "location": {
+      "latitude": 43.645,
+      "longitude": -79.372
+    },
+    "unavailability": ["2025-02-01", "2025-02-03", "2025-02-06"],
+    "features": ["Bluetooth", "Navigation", "Leather Seats"],
+    "totalTrips": 120,
+    "createdAt": "2025-01-19T12:00:00Z",
+    "updatedAt": "2025-01-19T12:00:00Z"
+  },
+  {
+    "carId": "car006",
+    "hostId": "host006",
+    "allStarHost": true,
+    "rating": 4.9,
+    "pricePerDay": 150,
+    "discount": 10,
+    "carImageUrl": "https://images.carexpert.com.au/resize/3000/-/app/uploads/2022/07/2022-Maserati-Ghibli-Modena-HERO.jpg",
+    "make": "Maserati",
+    "model": "Ghibli",
+    "year": 2022,
+    "location": {
+      "latitude": 43.6425,
+      "longitude": -79.376
+    },
+    "unavailability": ["2025-02-05", "2025-02-06"],
+    "features": ["Bluetooth", "Leather Seats", "Surround Sound"],
+    "totalTrips": 75,
+    "createdAt": "2025-01-20T14:00:00Z",
+    "updatedAt": "2025-01-20T14:00:00Z"
+  },
+  {
+    "carId": "car007",
+    "hostId": "host007",
+    "allStarHost": false,
+    "rating": 4.3,
+    "pricePerDay": 40,
+    "discount": 5,
+    "carImageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7xSqAJrdExIuId1re2hrU9Vw3UEdGxsS1Q&s",
+    "make": "Chevrolet",
+    "model": "Silverado",
+    "year": 2022,
+    "location": {
+      "latitude": 43.634,
+      "longitude": -79.368
+    },
+    "unavailability": ["2025-01-30", "2025-01-31"],
+    "features": ["Bluetooth", "Navigation", "Heated Seats"],
+    "totalTrips": 60,
+    "createdAt": "2025-01-21T15:00:00Z",
+    "updatedAt": "2025-01-21T15:00:00Z"
+  },
+  {
+    "carId": "car008",
+    "hostId": "host008",
+    "allStarHost": true,
+    "rating": 5.0,
+    "pricePerDay": 200,
+    "discount": 20,
+    "carImageUrl": "https://di-uploads-pod29.dealerinspire.com/porscheontario1/uploads/2021/08/2022-porsche-911-carrera-trim-levels.png",
+    "make": "Porsche",
+    "model": "911",
+    "year": 2022,
+    "location": {
+      "latitude": 43.633,
+      "longitude": -79.374
+    },
+    "unavailability": ["2025-02-05", "2025-02-06"],
+    "features": ["Bluetooth", "Navigation", "Leather Seats"],
+    "totalTrips": 180,
+    "createdAt": "2025-01-22T16:00:00Z",
+    "updatedAt": "2025-01-22T16:00:00Z"
+  },
+  {
+    "carId": "car009",
+    "hostId": "host009",
+    "allStarHost": false,
+    "rating": 4.6,
+    "pricePerDay": 120,
+    "discount": 0,
+    "carImageUrl": "https://stimg.cardekho.com/images/carexteriorimages/930x620/Jaguar/F-TYPE/10647/1701249384983/front-left-side-47.jpg",
+    "make": "Jaguar",
+    "model": "F-Type",
+    "year": 2022,
+    "location": {
+      "latitude": 43.641,
+      "longitude": -79.369
+    },
+    "unavailability": ["2025-01-25", "2025-01-26"],
+    "features": ["Bluetooth", "Navigation", "Leather Seats"],
+    "totalTrips": 90,
+    "createdAt": "2025-01-23T17:00:00Z",
+    "updatedAt": "2025-01-23T17:00:00Z"
+  },
+  {
+    "carId": "car010",
+    "hostId": "host010",
+    "allStarHost": true,
+    "rating": 4.8,
+    "pricePerDay": 100,
+    "discount": 15,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/BMW_G42_1X7A5766.jpg/640px-BMW_G42_1X7A5766.jpg",
+    "make": "BMW",
+    "model": "2 Series",
+    "year": 2022,
+    "location": {
+      "latitude": 51.0447,
+      "longitude": -114.0719
+    },
+    "unavailability": ["2025-02-01", "2025-02-02", "2025-02-03"],
+    "features": ["GPS", "Bluetooth", "Heated Seats"],
+    "totalTrips": 100,
+    "createdAt": "2025-01-15T08:00:00Z",
+    "updatedAt": "2025-01-15T08:00:00Z"
+  },
+  {
+    "carId": "car111",
+    "hostId": "host111",
+    "allStarHost": true,
+    "rating": 4.9,
+    "pricePerDay": 120,
+    "discount": 10,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/2020_Tesla_Model_3.jpg/640px-2020_Tesla_Model_3.jpg",
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2022,
+    "location": {
+      "latitude": 51.0463,
+      "longitude": -114.0711
+    },
+    "unavailability": ["2025-02-10", "2025-02-12"],
+    "features": ["Autopilot", "Bluetooth", "Sunroof"],
+    "totalTrips": 85,
+    "createdAt": "2025-01-16T09:00:00Z",
+    "updatedAt": "2025-01-16T09:00:00Z"
+  },
+  {
+    "carId": "car112",
+    "hostId": "host112",
+    "allStarHost": true,
+    "rating": 4.7,
+    "pricePerDay": 95,
+    "discount": 20,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/2021_Ford_Mustang_GT.jpg/640px-2021_Ford_Mustang_GT.jpg",
+    "make": "Ford",
+    "model": "Mustang GT",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0469,
+      "longitude": -114.0707
+    },
+    "unavailability": ["2025-02-05", "2025-02-06"],
+    "features": ["Bluetooth", "Backup Camera", "Leather Seats"],
+    "totalTrips": 120,
+    "createdAt": "2025-01-17T08:00:00Z",
+    "updatedAt": "2025-01-17T08:00:00Z"
+  },
+  {
+    "carId": "car113",
+    "hostId": "host113",
+    "allStarHost": false,
+    "rating": 4.5,
+    "pricePerDay": 90,
+    "discount": 10,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/2021_Honda_Civic_Si.jpg/640px-2021_Honda_Civic_Si.jpg",
+    "make": "Honda",
+    "model": "Civic Si",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0455,
+      "longitude": -114.0725
+    },
+    "unavailability": ["2025-02-03", "2025-02-04"],
+    "features": ["Bluetooth", "Heated Seats", "Navigation"],
+    "totalTrips": 60,
+    "createdAt": "2025-01-18T08:00:00Z",
+    "updatedAt": "2025-01-18T08:00:00Z"
+  },
+  {
+    "carId": "car114",
+    "hostId": "host113",
+    "allStarHost": true,
+    "rating": 4.6,
+    "pricePerDay": 110,
+    "discount": 5,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/2021_Audi_Q5.jpg/640px-2021_Audi_Q5.jpg",
+    "make": "Audi",
+    "model": "Q5",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0433,
+      "longitude": -114.0712
+    },
+    "unavailability": ["2025-02-10", "2025-02-11"],
+    "features": ["Leather Seats", "Bluetooth", "Panoramic Sunroof"],
+    "totalTrips": 80,
+    "createdAt": "2025-01-19T08:00:00Z",
+    "updatedAt": "2025-01-19T08:00:00Z"
+  },
+  {
+    "carId": "car115",
+    "hostId": "host114",
+    "allStarHost": false,
+    "rating": 4.4,
+    "pricePerDay": 85,
+    "discount": 15,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/2021_Mercedes-Benz_E-Class.jpg/640px-2021_Mercedes-Benz_E-Class.jpg",
+    "make": "Mercedes-Benz",
+    "model": "E-Class",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0467,
+      "longitude": -114.0709
+    },
+    "unavailability": ["2025-02-06", "2025-02-07"],
+    "features": ["Bluetooth", "Heated Seats", "Navigation"],
+    "totalTrips": 95,
+    "createdAt": "2025-01-20T08:00:00Z",
+    "updatedAt": "2025-01-20T08:00:00Z"
+  },
+  {
+    "carId": "car116",
+    "hostId": "host114",
+    "allStarHost": true,
+    "rating": 4.7,
+    "pricePerDay": 130,
+    "discount": 10,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/2021_Lexus_RX_350.jpg/640px-2021_Lexus_RX_350.jpg",
+    "make": "Lexus",
+    "model": "RX 350",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0442,
+      "longitude": -114.0734
+    },
+    "unavailability": ["2025-02-08", "2025-02-09"],
+    "features": ["Bluetooth", "Panoramic Sunroof", "Navigation"],
+    "totalTrips": 110,
+    "createdAt": "2025-01-21T08:00:00Z",
+    "updatedAt": "2025-01-21T08:00:00Z"
+  },
+  {
+    "carId": "car117",
+    "hostId": "host114",
+    "allStarHost": false,
+    "rating": 4.6,
+    "pricePerDay": 105,
+    "discount": 5,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/2021_BMW_3_Series.jpg/640px-2021_BMW_3_Series.jpg",
+    "make": "BMW",
+    "model": "3 Series",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0425,
+      "longitude": -114.0704
+    },
+    "unavailability": ["2025-02-02", "2025-02-03"],
+    "features": ["GPS", "Bluetooth", "Heated Seats"],
+    "totalTrips": 50,
+    "createdAt": "2025-01-22T08:00:00Z",
+    "updatedAt": "2025-01-22T08:00:00Z"
+  },
+  {
+    "carId": "car118",
+    "hostId": "host115",
+    "allStarHost": true,
+    "rating": 4.9,
+    "pricePerDay": 150,
+    "discount": 0,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/2021_Porsche_911_Carrera.jpg/640px-2021_Porsche_911_Carrera.jpg",
+    "make": "Porsche",
+    "model": "911 Carrera",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0438,
+      "longitude": -114.0718
+    },
+    "unavailability": ["2025-02-04", "2025-02-05"],
+    "features": ["Bluetooth", "Leather Seats", "Navigation"],
+    "totalTrips": 75,
+    "createdAt": "2025-01-23T08:00:00Z",
+    "updatedAt": "2025-01-23T08:00:00Z"
+  },
+  {
+    "carId": "car119",
+    "hostId": "host115",
+    "allStarHost": true,
+    "rating": 4.6,
+    "pricePerDay": 140,
+    "discount": 20,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/2020_Mercedes-Benz_GLC.jpg/640px-2020_Mercedes-Benz_GLC.jpg",
+    "make": "Mercedes-Benz",
+    "model": "GLC",
+    "year": 2020,
+    "location": {
+      "latitude": 51.0418,
+      "longitude": -114.072
+    },
+    "unavailability": ["2025-02-07", "2025-02-08"],
+    "features": ["Leather Seats", "Bluetooth", "Sunroof"],
+    "totalTrips": 65,
+    "createdAt": "2025-01-24T08:00:00Z",
+    "updatedAt": "2025-01-24T08:00:00Z"
+  },
+  {
+    "carId": "car120",
+    "hostId": "host115",
+    "allStarHost": false,
+    "rating": 4.3,
+    "pricePerDay": 75,
+    "discount": 10,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/2021_Toyota_Corolla.jpg/640px-2021_Toyota_Corolla.jpg",
+    "make": "Toyota",
+    "model": "Corolla",
+    "year": 2021,
+    "location": {
+      "latitude": 51.0458,
+      "longitude": -114.0702
+    },
+    "unavailability": ["2025-02-01", "2025-02-02"],
+    "features": ["Bluetooth", "Backup Camera", "Air Conditioning"],
+    "totalTrips": 90,
+    "createdAt": "2025-01-25T08:00:00Z",
+    "updatedAt": "2025-01-25T08:00:00Z"
+  },
+  {
+    "carId": "car012",
+    "hostId": "host012",
+    "allStarHost": true,
+    "rating": 4.8,
+    "pricePerDay": 125,
+    "discount": 5,
+    "carImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/2020_Ford_F-150.jpg/640px-2020_Ford_F-150.jpg",
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2020,
+    "location": {
+      "latitude": 51.0436,
+      "longitude": -114.0699
+    },
+    "unavailability": ["2025-02-10", "2025-02-11"],
+    "features": ["Leather Seats", "Bluetooth", "Towing Package"],
+    "totalTrips": 105,
+    "createdAt": "2025-01-26T08:00:00Z",
+    "updatedAt": "2025-01-26T08:00:00Z"
+  }
+]
