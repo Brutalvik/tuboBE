@@ -3,6 +3,7 @@ const express = require("express");
 const admin = require("firebase-admin");
 const { geohashQueryBounds, distanceBetween } = require("geofire-common");
 const router = express();
+const { sortCarsByDistance } = require("../../helpers/helpers");
 
 // Initialize Firebase Admin
 const serviceAccount = require(process.env
@@ -17,6 +18,9 @@ const db = admin.firestore();
 // Your route
 router.get("/nearby", async (req, res) => {
   const { latitude, longitude, radius = 100 } = req.query; // Default radius 100 km
+  if (isNaN(latitude) || isNaN(longitude) || radius === "") {
+    return res.send("Bad Request").status(400);
+  }
   const radiusInM = parseFloat(radius) * 1000; // Convert radius to meters
 
   // Create an array with latitude and longitude instead of a GeoPoint
@@ -24,24 +28,13 @@ router.get("/nearby", async (req, res) => {
 
   // Get bounds for the geohash query
   const bounds = geohashQueryBounds(center, radiusInM);
-  console.log("Bounds:", bounds);
   const promises = [];
 
   // Create queries for each bounding box region
   for (const b of bounds) {
-    const q = db
-      .collection("cars")
-      .orderBy("location")
-      .startAt(b[0])
-      .endAt(b[1])
-      .limit(10); // Limit the number of docs fetched per query for performance
-    promises.push(q.get());
-
-    const snapshot = await q.get();
-    console.log(
-      "A : ",
-      snapshot.docs.map((doc) => doc.data())
-    );
+    const q = db.collection("cars").orderBy("location").startAt(b[0]).limit(20); // Limit the number of docs fetched per query for performance
+    const results = await q.get();
+    promises.push(results);
   }
 
   try {
@@ -55,22 +48,30 @@ router.get("/nearby", async (req, res) => {
 
         // Filter out false positives due to GeoHash accuracy
         const distanceInKm = distanceBetween([lat, lng], center);
-        console.log("DISTANCE IN KM ", distanceInKm);
-        const distanceInM = distanceInKm * 1000;
-        matchingDocs.push(doc);
 
-        // if (distanceInM <= radiusInM) {
-        //   matchingDocs.push(doc);
-        // }
+        const distanceInM = distanceInKm * 1000;
+
+        // Only add the car if it is within the specified radius
+        if (distanceInM <= radiusInM) {
+          if (!matchingDocs.some((existingDoc) => existingDoc.id === doc.id))
+            matchingDocs.push({
+              id: doc.id,
+              ...doc.data(),
+              location: {
+                latitude: lat, // Ensure latitude is a plain number
+                longitude: lng, // Ensure longitude is a plain number
+              },
+              distanceInKm, // Add distanceInKm to the document data
+            });
+        }
       }
     }
 
-    // Return cars data after filtering
-    const carsData = matchingDocs.map((doc) => ({
-      id: doc.id,
-      ...doc.data(),
-    }));
-    res.json(carsData);
+    // Sort the carsData by distanceInKm (nearest first)
+    const sortedCars = sortCarsByDistance(matchingDocs);
+
+    // Return the sorted cars with distanceInKm
+    res.status(200).json(sortedCars);
   } catch (error) {
     console.error(error);
     res.status(500).send("Error getting cars");
