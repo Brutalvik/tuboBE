@@ -9,6 +9,10 @@
 /coverage
 /src/dummy/
 
+# service account
+/src/service
+
+
 # production
 /build
 
@@ -24,4 +28,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/src/service
